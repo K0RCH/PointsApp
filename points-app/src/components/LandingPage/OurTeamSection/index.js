@@ -20,8 +20,8 @@ import {
 } from './OurTeamSectionElements'
 import { FaFacebookSquare, FaLinkedin } from 'react-icons/fa'
 import { AiFillInstagram, AiFillGithub } from 'react-icons/ai'
-import Image from '../../images/david.jpg'
-import Image2 from '../../images/david2.jpg'
+import Image from '../../../images/david.jpg'
+import Image2 from '../../../images/david2.jpg'
 
 const OurTeamSection = () => {
     return (

@@ -27,7 +27,7 @@ export const AboutWrapper = styled.div`
 
 export const AboutRow = styled.div`
     display: grid;
-    grid-auto-column: minmax(auto, 1fr);
+    grid-auto-columns: minmax(auto, 1fr);
     align-items: center;
     grid-template-areas: ${({ imgStart }) => ( imgStart ? `'col2 col1'` : `'col1 col2'` )};
 

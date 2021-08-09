@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import Video from '../../videos/welcome-page-video.mp4'
-import { Button } from '../ButtonElement'
+import Video from '../../../videos/welcome-page-video.mp4'
+import { Button } from '../../ButtonElement'
 import {
     WelcomeSectionContainer,
     WelcomeBg,

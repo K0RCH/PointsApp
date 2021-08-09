@@ -38,7 +38,7 @@ export const Icon = styled.div`
     top: 1.2rem;
     right: 1.5rem;
     background: transparent;
-    fon-size: 2rem;
+    font-size: 2rem;
     cursor: pointer;
     outline: none;
 `

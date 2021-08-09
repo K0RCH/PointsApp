@@ -11,13 +11,14 @@ import {
     NavBtn,
     NavBtnLink
 } from './NavbarElements'
+import * as ROUTES from '../../../constants/routes'
 
 const Navbar = ({ toggle }) => {
     return (
         <>
             <Nav>
                 <NavbarContainer>
-                    <NavLogo to = "/">Points</NavLogo>
+                    <NavLogo to={ ROUTES.HOME }>Points</NavLogo>
                     <MobileIcon onClick = { toggle }>
                         <FaBars />
                     </MobileIcon>
@@ -36,7 +37,7 @@ const Navbar = ({ toggle }) => {
                         </NavItem>
                     </NavMenu>
                     <NavBtn>
-                        <NavBtnLink to = "/signup">Sign In / Up</NavBtnLink>
+                        <NavBtnLink to={ ROUTES.SIGN_UP }>Sign In / Up</NavBtnLink>
                     </NavBtn>
                 </NavbarContainer>
             </Nav>

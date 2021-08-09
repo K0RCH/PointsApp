@@ -15,10 +15,10 @@ import {
     AppName,
     DownloadLink
 } from './AboutSectionElements'
-import Picture1 from '../../images/about-section.png'
-import Picture2 from '../../images/friends.png'
+import Picture1 from '../../../images/about-section.png'
+import Picture2 from '../../../images/friends.png'
 import { FaGooglePlay, FaAppStoreIos } from 'react-icons/fa'
-import { Separator } from '../SeparatorElement'
+import { Separator } from '../../SeparatorElement'
 
 const AboutSection = () => {
     return (

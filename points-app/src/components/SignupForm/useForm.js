@@ -27,19 +27,6 @@ const useForm = (callback, validateForm) => {
         })
     }
 
-    //  TODO:   Find way to solve the error with signing up in firebase.
-    //  Desc:   Script is working perfectly but user cannot add acc to firebase
-    //          cause of error in consol (Chrome):
-    //!         Uncaught (in promise) FirebaseError: Missing or insufficient
-    //!         permissions.
-    //?                                         prebuilt-29191f3d-bed1a14c.js:188
-    //          This issue was solved on GitHub:
-    //          https://github.com/actions-on-google/smart-home-nodejs/issues/369
-    //
-    //          All staff (like Form Validation, Form Usage) is working fine and
-    //          problem is probably in handleSignup() function or in Firestore
-    //          rules.
-
     const handleSignup = async (event) => {
         event.preventDefault()
 

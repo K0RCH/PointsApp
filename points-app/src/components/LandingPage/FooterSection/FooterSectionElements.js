@@ -71,7 +71,7 @@ export const ColTitle = styled.h4`
     position: relative;
 
     &::before {
-        content '';
+        content: '';
         position: absolute;
         left: 0;
         bottom: -12px;
@@ -142,7 +142,7 @@ export const Newsletter = styled.div`
     color: #fff;
     background: ${({ lightBg }) => ( lightBg ? '#f9f9f9' : '#1a1a1a' )};
     display: grid;
-    grid-auto-column: minmax(auto, 1fr);
+    grid-auto-columns: minmax(auto, 1fr);
     align-items: center;
     padding: 150px 0 100px;
 `

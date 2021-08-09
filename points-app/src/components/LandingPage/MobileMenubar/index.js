@@ -9,6 +9,7 @@ import {
     MenubarBtnWrap,
     MenubarBtnLink
 } from './MobileMenubarElements'
+import * as ROUTES from '../../../constants/routes'
 
 const MobileMenubar = ({ isOpen, toggle }) => {
     return (
@@ -24,7 +25,7 @@ const MobileMenubar = ({ isOpen, toggle }) => {
                     <MenubarLink to = "partners" onClick = { toggle }>Partners</MenubarLink>
                 </MenubarMenu>
                 <MenubarBtnWrap>
-                    <MenubarBtnLink to = "/signup">Sign In / Up</MenubarBtnLink>
+                    <MenubarBtnLink to={ ROUTES.SIGN_UP }>Sign In / Up</MenubarBtnLink>
                 </MenubarBtnWrap>
             </MenubarWrapper>
         </MobileMenubarContainer>

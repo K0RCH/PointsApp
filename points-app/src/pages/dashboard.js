@@ -1,4 +1,8 @@
 import React, { useEffect } from 'react'
+import { Grid } from '../components/DashboardPage/DashboardElements'
+import Header from '../components/Header/Header'
+import Timeline from '../components/DashboardPage/Timeline'
+import Sidebar from '../components/DashboardPage/Sidebar'
 
 const DashboardPage = () => {
     useEffect(() => {
@@ -7,7 +11,11 @@ const DashboardPage = () => {
 
     return (
         <>
-            
+            <Header />
+            <Grid>
+                <Timeline />
+                <Sidebar />
+            </Grid>
         </>
     )
 }

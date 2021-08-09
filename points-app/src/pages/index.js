@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react'
-import AboutSection from '../components/AboutSection'
-import FooterSection from '../components/FooterSection'
-import MobileMenubar from '../components/MobileMenubar'
-import Navbar from '../components/Navbar'
-import OurTeamSection from '../components/OurTeamSection'
-import PartnersSection from '../components/PartnersSection'
-import WelcomeSection from '../components/WelcomeSection'
+import AboutSection from '../components/LandingPage/AboutSection'
+import FooterSection from '../components/LandingPage/FooterSection'
+import MobileMenubar from '../components/LandingPage/MobileMenubar'
+import Navbar from '../components/LandingPage/Navbar'
+import OurTeamSection from '../components/LandingPage/OurTeamSection'
+import PartnersSection from '../components/LandingPage/PartnersSection'
+import WelcomeSection from '../components/LandingPage/WelcomeSection'
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false)
