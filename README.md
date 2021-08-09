@@ -7,7 +7,7 @@ Points App is the app where you can collect points for completing challenges. It
 ## New Features
 
 - landing page
-- sign in/out system (*currently not working!*)
+- sign in/out system
 
 ## Team Members
 
