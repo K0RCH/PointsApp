@@ -17,37 +17,10 @@ import {
 } from './HeaderElements'
 import { GoSignOut } from 'react-icons/go'
 import { AiFillHome } from 'react-icons/ai'
-import { storageRef } from '../../lib/firebase'
 
 const Header = () => {
     const { firebase } = useContext(FirebaseContext)
     const { user } = useContext(UserContext)
-
-    //  Get the profile picture
-    if (user) {
-        const userName = user.displayName
-        const profilePictureURL = storageRef.child(`avatars/${userName.toLowerCase()}.jpg`)
-        const defaultProfilePictureURL = storageRef.child(`avatars/defaultProfilePicture.jpg`)
-        
-        if (profilePictureURL) {
-            profilePictureURL.getDownloadURL()
-                .then((url) => {
-                    document.getElementById('profile-avatar').setAttribute('src', url)
-                })
-                .catch((error) => {
-
-                })
-        } else {
-            defaultProfilePictureURL.getDownloadURL()
-                .then((url) => {
-                    document.getElementById('profile-avatar').setAttribute('src', url)
-                })
-                .catch((error) => {
-
-                })
-        }
-        }
-    //
 
     return (
         <HeaderContainer>
@@ -78,7 +51,10 @@ const Header = () => {
                                 </SignOutButton>
                                 <ProfileAvatar title='Profile'>
                                     <Link to={`/p/${user.displayName}`}>
-                                        <ProfileImg id='profile-avatar' alt={`${user.displayName} profile`} />
+                                        <ProfileImg
+                                            src={`/images/avatars/${user.displayName}.jpg`}
+                                            alt={`${user.displayName} profile`}
+                                        />
                                     </Link>
                                 </ProfileAvatar>
                             </>
@@ -88,7 +64,7 @@ const Header = () => {
                                     <NotUserButton type='button'>Log In</NotUserButton>
                                 </Link>
                                 <Link to={ ROUTES.SIGN_UP }>
-                                    <NotUserButton signUp='true' type='button'>Sign Up</NotUserButton>
+                                    <NotUserButton type='button'>Sign Up</NotUserButton>
                                 </Link>
                             </>
                         ) 

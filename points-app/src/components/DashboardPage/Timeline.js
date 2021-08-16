@@ -1,6 +1,10 @@
+import {
+    TimelineContainer
+} from './DashboardElements.js'
+
 const Timeline = () => {
     return (
-        <p>Timeline</p>
+        <TimelineContainer>Timeline</TimelineContainer>
     )
 }
 
