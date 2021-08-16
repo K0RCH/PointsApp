@@ -10,7 +10,7 @@ Points App is the app where you can collect points for completing challenges. It
 
 Things I added on the last update:
 
-- timeline (shares are not working yet!)
+- protected routes
 
 ## Features
 
@@ -20,13 +20,13 @@ Things that have been working for a while:
 - sign in/out system
 - sidebar (with suggestions)
 - system of followers
+- timeline (shares are not working yet!)
 
 ## Upcoming (soon!) changes
 
 Things I'm working on:
 
 - timeline (shares & view all comments)
-- protected routes
 - default user picture (for the user that have not got any custom)
 
 ## Upcoming changes (in future)
