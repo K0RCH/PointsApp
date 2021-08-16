@@ -8,6 +8,9 @@ export const HeaderContainer = styled.header`
     -webkit-box-shadow: 0px 12px 15px 7px rgba(0,0,0,0.09); 
     box-shadow: 0px 12px 15px 7px rgba(0,0,0,0.09);
     margin-bottom: 2rem;
+    position: fixed;
+    width: 100%;
+    margin-top: -6rem;
 `
 
 export const Container = styled.div`

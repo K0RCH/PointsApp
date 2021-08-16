@@ -4,6 +4,8 @@ export default function validateForm(values) {
     //  Validate username
     if (!values.username.trim()) {
         errors.username = 'Username is required'
+    } else if (values.username.length > 9) {
+        errors.username = 'Username should be 9 characters or less'
     }
 
     //  Validate email

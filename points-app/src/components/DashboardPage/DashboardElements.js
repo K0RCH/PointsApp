@@ -6,12 +6,19 @@ export const Grid = styled.div`
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1rem;
     justify-content: space-between;
-    margin: 0 auto;
+    margin: 6rem auto 0;
     max-width: 1024px;
 `
 
 export const SidebarContainer = styled.div`
     padding: 1rem;
+    width: 20rem;
+    position: fixed;
+    right: 2%;
+
+    @media screen and (max-width: 850px) {
+        display: none;
+    }
 `
 
 export const Link = styled(LinkR)`
@@ -59,17 +66,12 @@ export const ActiveUserImg = styled.img`
 `
 
 export const Username = styled.p`
-    font-weight: bold;
+    font-weight: 600;
     color: #01BF71;
 `
 
 export const ActiveUserPoints = styled.p`
     color: #bfbfbf;
-`
-
-export const TimelineContainer = styled.div`
-    grid-column: span 2 / span 2;
-    padding: 1rem;
 `
 
 export const SuggestionContainer = styled.div`
@@ -130,7 +132,7 @@ export const SuggestedProfileNameContainer = styled.div`
 `
 
 export const SuggestedProfileUsername = styled.p`
-    font-weight: bold;
+    font-weight: 600;
     color: #010606;
     width: 100%;
 `
@@ -143,7 +145,7 @@ export const FollowButton = styled.button`
     position: absolute;
     right: 10px;
     color: #01BF71;
-    font-weight: bold;
+    font-weight: 600;
     background: none;
     border: none;
     outline: none;
@@ -156,4 +158,28 @@ export const FollowButton = styled.button`
         transition: all 0.2s ease-in-out;
         text-decoration: underline;
     }
+`
+
+export const SuggestionText = styled.p`
+    color: #01BF71;
+    margin-top: 1.25rem;
+`
+
+export const TimelineContainer = styled.div`
+    grid-column: span 2 / span 2;
+    padding: 1rem;
+    position: relative;
+    text-align: center;
+
+    @media screen and (max-width: 850px) {
+        grid-column: span 3 / span 3;
+        align-items: center;
+        justify-content: center;
+    }
+`
+
+export const TimelineText = styled.div`
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2rem;
 `

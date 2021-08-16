@@ -5,7 +5,8 @@ import { getSuggestedProfiles } from '../../../services/firebase'
 import SuggestedProfile from './suggested-profile'
 import {
     SuggestionContainer,
-    SuggestedUsers
+    SuggestedUsers,
+    SuggestionText
 } from '../DashboardElements'
 
 const Suggestions = ({ userId, following, loggedInUserDocId }) => {
@@ -28,6 +29,7 @@ const Suggestions = ({ userId, following, loggedInUserDocId }) => {
         </SuggestionContainer>
     ) : profiles.length > 0 ? (
         <SuggestionContainer>
+            <SuggestionText>Suggestions for you:</SuggestionText>
             <SuggestedUsers>
                 {profiles.map((profile) => (
                     <SuggestedProfile
