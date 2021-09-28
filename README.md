@@ -4,7 +4,7 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/K0RCH/PointsApp?label=Last%20commit&logo=GitHub&style=flat-square)
 ![GitHub repo size](https://img.shields.io/github/repo-size/K0RCH/PointsApp?label=Repo%20size&logo=GitHub&style=flat-square)
 
-All of important things are below. **Be careful** - the app is still in development! Several things may not work.
+This repository (on the master branch) contains the last stable version of the application. All of important things are below. **Be careful** - the app is still in development! Several things may not work. If you feel that not all things have been explained, please contact me. You can find my contact details in the [author>contact](https://github.com/K0RCH/PointsApp#author-) section.
 
 ## About The App ℹ️
 
@@ -99,14 +99,14 @@ I would like also:
 
 ## Getting Started 🤩
 
-### Prerequisites
+### Prerequisites 👷
 
 - npm
   ```sh
   npm install npm@latest -g
   ```
 
-### Installation
+### Installation 💻
 
 1. Clone the repo
   ```sh
@@ -117,7 +117,7 @@ I would like also:
   npm install
   ```
 
-## Documentation
+## Documentation ❓
 
 All incomprehensible issues are resolved in the [documentation](https://docs.google.com/document/d/1FLB7BWM0sPQio1746sTa67O-zHgaLACqZpQmtc_N1eQ/edit?usp=sharing).
 
@@ -236,6 +236,6 @@ You can use a test user account:
 
 > Readme formatting
 
-## Licence
+## Licence ©️
 
 The project is licensed under the GPLv3 license. You can read more in [this file](https://github.com/K0RCH/PointsApp/blob/master/LICENSE).
