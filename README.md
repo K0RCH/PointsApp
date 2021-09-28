@@ -35,15 +35,17 @@ Points App is the app where you can collect points for completing challenges. It
 
 The split into versions allows you to see my progress. See how the application development history went by viewing version history:
 
-- **v 0.8** (future)
+- **v 0.9** (future)
   - privacy policy content
   - terms of use content
-- **v 0.7** (future)
-  - profile page
+  - checkbox on sign up page
+- **v 0.8** (future)
   - timeline
     - shares
     - view all comments
     - improve design of posts
+- **v 0.7** (future)
+  - profile page
   - default user picture
 - **v 0.6** (Sep 28, 2021)
   - visual changes (redesign)
@@ -79,6 +81,39 @@ Things that are on my to-do list:
 - administration panel
 - adding pictures (to tasks which have been completed by user)
 - badges for specific accounts (influencer, brand, administrator, moderator)
+
+I would like also:
+
+- create mobile (Android and iOS) application
+- create multilingual version of the app
+  - English (is already here)
+  - Polish
+  - German
+  - Russian
+  - French
+  - Spanish
+- create direct messages or to come up with some other way (for example stories) for influencers to communicate with their fans (and vice versa)
+- create place where brands and influencers could create their own challenges for their community
+
+## Getting Started 🤩
+
+### Prerequisites
+
+- npm
+  ```sh
+  npm install npm@latest -g
+  ```
+
+### Installation
+
+1. Clone the repo
+  ```sh
+  git clone https://github.com/K0RCH/PointsApp.git
+  ```
+2. Install NPM packages
+  ```sh
+  npm install
+  ```
 
 ## Author 🦊
 
