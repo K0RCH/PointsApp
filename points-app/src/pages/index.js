@@ -1,34 +1,25 @@
-import React, { useState, useEffect } from 'react'
-import AboutSection from '../components/LandingPage/AboutSection'
-import FooterSection from '../components/LandingPage/FooterSection'
-import MobileMenubar from '../components/LandingPage/MobileMenubar'
-import Navbar from '../components/LandingPage/Navbar'
-import OurTeamSection from '../components/LandingPage/OurTeamSection'
-import PartnersSection from '../components/LandingPage/PartnersSection'
-import WelcomeSection from '../components/LandingPage/WelcomeSection'
+import React, { useEffect } from 'react'
+import { Grid, DashboardContainer } from '../components/DashboardPage/DashboardElements'
+import Header from '../components/Header/Header'
+import Timeline from '../components/DashboardPage/Timeline'
+import Sidebar from '../components/DashboardPage/Sidebar/Sidebar'
 
-const Home = () => {
-    const [isOpen, setIsOpen] = useState(false)
-
-    const toggle = () => {
-        setIsOpen(!isOpen)
-    }
-
+const DashboardPage = () => {
     useEffect(() => {
-        document.title = 'Points App | Landing Page'
+        document.title = 'Points App'
     }, [])
 
     return (
         <>
-            <MobileMenubar isOpen = { isOpen } toggle = { toggle }/>
-            <Navbar toggle = { toggle } />
-            <WelcomeSection />
-            <AboutSection />
-            <OurTeamSection />
-            <PartnersSection />
-            <FooterSection />
+            <Header />
+            <DashboardContainer>
+                <Grid>
+                    <Timeline />
+                    <Sidebar />
+                </Grid>
+            </DashboardContainer>
         </>
     )
 }
 
-export default Home
+export default DashboardPage

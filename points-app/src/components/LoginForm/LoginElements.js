@@ -23,8 +23,7 @@ export const Form = styled.form`
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    place-items: center;
 `
 
 export const Title = styled.h1`
@@ -55,7 +54,7 @@ export const FormInput = styled.input`
     height: 40px;
     width: 100%;
     border: none;
-    color: #01BF71;
+    color: #d124ed;
     font-weight: 600;
 
     &::placeholder {
@@ -69,7 +68,7 @@ export const FormInputBtn = styled.button`
     height: 50px;
     margin-top: 10px;
     border-radius: 2px;
-    background: #01BF71;
+    background: #d124ed;
     outline: none;
     border: none;
     color: #fff;
@@ -78,8 +77,7 @@ export const FormInputBtn = styled.button`
 
     &:hover {
         cursor: pointer;
-        background: #04ff96;
-        color: #010606;
+        background: #af1ec7;
         transition: all 0.2s ease-in-out;
     }
 
@@ -100,7 +98,7 @@ export const FormInputSignup = styled.p`
 
 export const FormLink = styled(LinkR)`
     text-decoration: none;
-    color: #01BF71;
+    color: #d124ed;
     font-weight: 600;
     transition: all 0.2s ease-in-out;
 
@@ -121,11 +119,11 @@ export const CloseBtn = styled.div`
 
 export const CloseBtnLink = styled(LinkR)`
     text-decoration: none;
-    color: #01BF71;
+    color: #d124ed;
     transition: all 0.2s ease-in-out;
 
     &:hover {
-        color: #04ff96;
+        color: #af1ec7;
         transition: all 0.2s ease-in-out;
     }
 `

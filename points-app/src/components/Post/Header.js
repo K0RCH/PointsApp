@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types'
+import { formatDistance } from 'date-fns'
 import {
+    DateCreated,
     HeaderContainer,
     HeaderImage,
     HeaderLink,
@@ -7,7 +9,7 @@ import {
     HeaderUsername
 } from './PostElements'
 
-const Header = ({ username }) => {
+const Header = ({ posted, username }) => {
     return (
         <HeaderContainer>
             <HeaderWrapper>
@@ -17,6 +19,7 @@ const Header = ({ username }) => {
                         alt={`${username} profile`}
                     />
                     <HeaderUsername>{username}</HeaderUsername>
+                    <DateCreated>{formatDistance(posted, new Date())} ago</DateCreated>
                 </HeaderLink>
             </HeaderWrapper>
         </HeaderContainer>

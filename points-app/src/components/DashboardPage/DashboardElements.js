@@ -1,22 +1,39 @@
 import styled from 'styled-components'
 import { Link as LinkR } from 'react-router-dom'
 
+export const DashboardContainer = styled.div`
+    background: #F3F4F6;
+`
+
 export const Grid = styled.div`
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1rem;
     justify-content: space-between;
-    margin: 6rem auto 0;
+    margin: 0 auto;
     max-width: 1024px;
+    min-height: 100vh;
 `
 
 export const SidebarContainer = styled.div`
-    padding: 1rem;
+    padding: 1rem 0;
     width: 20rem;
+    height: 100%;
     position: fixed;
-    right: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-itemes: center;
+    right: 0;
+    background: #764AA9;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 
-    @media screen and (max-width: 850px) {
+    @media screen and (max-width: 1600px) {
         display: none;
     }
 `
@@ -30,11 +47,11 @@ export const ActiveUserContainer = styled.div`
     display: flex;
     margin-bottom: 1.5rem;
     padding: 10px;
-    width: 100%;
+    width: 20rem;
     transition: all 0.2s ease-in-out;
 
     &:hover {
-        border-left: 5px solid #01BF71;
+        border-left: 5px solid #fff;
         background: rgba(191,191,191, 0.25);
         padding-left: 15px;
         transition: all 0.2s ease-in-out;
@@ -58,16 +75,16 @@ export const ActiveUserImg = styled.img`
     width: 4rem;
     height: 4rem;
     display: flex;
-    margin-right: 0.75rem;
-    -webkit-box-shadow: 0px 0px 0px 3px rgba(1, 191, 113);
-    -moz-box-shadow: 0px 0px 0px 3px rgba(1, 191, 113);
-    box-shadow: 0px 0px 0px 3px rgba(1, 191, 113);
+    margin: 0 0.75rem 0 1rem;
+    -webkit-box-shadow: 0px 0px 0px 3px rgb(230, 230, 230);
+    -moz-box-shadow: 0px 0px 0px 3px rgb(230, 230, 230);
+    box-shadow: 0px 0px 0px 3px rgb(230, 230, 230);
     object-fit: cover;
 `
 
 export const Username = styled.p`
     font-weight: 600;
-    color: #01BF71;
+    color: #fff;
 `
 
 export const ActiveUserPoints = styled.p`
@@ -75,9 +92,16 @@ export const ActiveUserPoints = styled.p`
 `
 
 export const SuggestionContainer = styled.div`
-    border-top: 1px solid #e6e6e6;
     display: flex;
     flex-direction: column;
+    width: 20rem;
+`
+
+export const SuggestionContainerSkeleton = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    text-align: center;
 `
 
 export const SuggestedUsers = styled.div`
@@ -96,7 +120,7 @@ export const SuggestedProfileContainer = styled.div`
     position: relative;
 
     &:hover {
-        border-left: 5px solid #010606;
+        border-left: 5px solid #fff;
         background: rgba(191,191,191, 0.25);
         padding-left: 15px;
         transition: all 0.2s ease-in-out;
@@ -114,10 +138,10 @@ export const SuggestedProfileImg = styled.img`
     width: 4rem;
     height: 4rem;
     display: flex;
-    margin-right: 0.75rem;
-    -webkit-box-shadow: 0px 0px 0px 3px rgba(1, 6, 6);
-    -moz-box-shadow: 0px 0px 0px 3px rgba(11, 6, 6);
-    box-shadow: 0px 0px 0px 3px rgba(1, 6, 6);
+    margin: 0 0.75rem 0 1rem;
+    -webkit-box-shadow: 0px 0px 0px 3px rgb(230, 230, 230);
+    -moz-box-shadow: 0px 0px 0px 3px rgb(230, 230, 230);
+    box-shadow: 0px 0px 0px 3px rgb(230, 230, 230);
     object-fit: cover;
     outline: none;
 `
@@ -133,7 +157,7 @@ export const SuggestedProfileNameContainer = styled.div`
 
 export const SuggestedProfileUsername = styled.p`
     font-weight: 600;
-    color: #010606;
+    color: #fff;
     width: 100%;
 `
 
@@ -143,8 +167,8 @@ export const SuggestedProfilePoints = styled.p`
 
 export const FollowButton = styled.button`
     position: absolute;
-    right: 10px;
-    color: #01BF71;
+    right: 1rem;
+    color: #fff;
     font-weight: 600;
     background: none;
     border: none;
@@ -161,21 +185,26 @@ export const FollowButton = styled.button`
 `
 
 export const SuggestionText = styled.p`
-    color: #01BF71;
-    margin-top: 1.25rem;
+    color: #fff;
+    margin: 1.25rem 1rem 0;
+    font-weight: 600;
+`
+
+export const Separator = styled.div`
+    content: '';
+    height: 0.3rem;
+    width: 2.5rem;
+    background: #6E36AB;
+    margin: 0.75rem 0 0 1rem;
+    border-radius: 4px;
 `
 
 export const TimelineContainer = styled.div`
-    grid-column: span 2 / span 2;
-    padding: 1rem;
+    grid-column: span 3 / span 3;
+    padding: 7rem 1rem 1rem;
     position: relative;
     text-align: center;
-
-    @media screen and (max-width: 850px) {
-        grid-column: span 3 / span 3;
-        align-items: center;
-        justify-content: center;
-    }
+    place-items: center;
 `
 
 export const TimelineText = styled.div`

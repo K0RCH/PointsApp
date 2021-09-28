@@ -5,6 +5,7 @@ import * as ROUTES from '../../constants/routes'
 import {
     HeaderContainer,
     Container,
+    NavBar,
     NavContainer,
     NavLogo,
     NavWrapper,
@@ -15,8 +16,7 @@ import {
     ProfileImg,
     NotUserButton
 } from './HeaderElements'
-import { GoSignOut } from 'react-icons/go'
-import { AiFillHome } from 'react-icons/ai'
+import { AiOutlineTrophy, AiOutlineHome, AiOutlineLogout } from 'react-icons/ai'
 
 const Header = () => {
     const { firebase } = useContext(FirebaseContext)
@@ -30,25 +30,32 @@ const Header = () => {
                     <NavWrapper>
                         {user ? (
                             <>
-                                <Link to={ ROUTES.DASHBOARD } aria-label='Dashboard' title='Home'>
-                                    <NavIcon>
-                                        <AiFillHome />
-                                    </NavIcon>
-                                </Link>
-                                <SignOutButton
-                                    type='button'
-                                    title='Sign Out'
-                                    onClick={() => firebase.auth().signOut()}
-                                    onKeyDown={(event) => {
-                                        if (event.key === 'Enter') {
-                                            firebase.auth().signOut()
-                                        }
-                                    }}
-                                >
-                                    <NavIcon>
-                                        <GoSignOut />
-                                    </NavIcon>
-                                </SignOutButton>
+                                <NavBar>
+                                    <Link to={ ROUTES.DASHBOARD } aria-label='Dashboard' title='Home'>
+                                        <NavIcon>
+                                            <AiOutlineHome />
+                                        </NavIcon>
+                                    </Link>
+                                    <Link to={ ROUTES.CHALLENGES } aria-label='Challenges' title='Challenges'>
+                                        <NavIcon>
+                                            <AiOutlineTrophy />
+                                        </NavIcon>
+                                    </Link>
+                                    <SignOutButton
+                                        type='button'
+                                        title='Sign Out'
+                                        onClick={() => firebase.auth().signOut()}
+                                        onKeyDown={(event) => {
+                                            if (event.key === 'Enter') {
+                                                firebase.auth().signOut()
+                                            }
+                                        }}
+                                    >
+                                        <NavIcon>
+                                            <AiOutlineLogout />
+                                        </NavIcon>
+                                    </SignOutButton>
+                                </NavBar>
                                 <ProfileAvatar title='Profile'>
                                     <Link to={`/p/${user.displayName}`}>
                                         <ProfileImg

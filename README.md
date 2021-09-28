@@ -1,35 +1,76 @@
 # PointsApp
 
-All of important things are below. **Be careful** - the app is still in development!
+![GitHub all releases](https://img.shields.io/github/downloads/K0RCH/PointsApp/total?label=Downloads&logo=GitHub&style=flat-square)
+![GitHub last commit](https://img.shields.io/github/last-commit/K0RCH/PointsApp?label=Last%20commit&logo=GitHub&style=flat-square)
+![GitHub repo size](https://img.shields.io/github/repo-size/K0RCH/PointsApp?label=Repo%20size&logo=GitHub&style=flat-square)
 
-## About The App
+All of important things are below. **Be careful** - the app is still in development! Several things may not work.
 
-Points App is the app where you can collect points for completing challenges. It is some sort of social media platform where you can follow other users and see their timeline. Points is an application that allows you to experience unforgettable moments and enjoy your life better. Special challenges prepared by our creative team will give you many ideas on how you can spend unforgettable moments with a dose of competition between your friends. Interesting tasks give you the opportunity to get to know the world better. Thanks to them, you can spend an amazing day individually or with friends. Points introduce a dose of competition in everyday life. It makes you feel more motivated to do new things.
+## About The App ℹ️
 
-## New Features
+Points App is the app where you can collect points for completing challenges. It is some sort of social media platform where you can follow other users and see their timeline. Points App is an application that allows you to experience unforgettable moments and enjoy your life better. Special challenges prepared by our creative team will give you many ideas on how you can spend unforgettable moments with a dose of competition between your friends. Interesting tasks give you the opportunity to get to know the world better. Thanks to them, you can spend an amazing day individually or with friends. Points App introduce a dose of competition in everyday life. It makes you feel more motivated to do new things.
 
-Things I added on the last update:
+### Built With 📘
 
-- protected routes
+| Framework |
+| --------- |
+|   React   |
 
-## Features
+### Acknowledgements 💗
 
-Things that have been working for a while:
+| Dependency | Description |
+| --------- | --------- |
+| date-fns | provides the most comprehensive, yet simple and consistent toolset for manipulating JavaScript dates in a browser & Node.js |
+| firebase | provides the tools and infrastructure you need to develop, grow, and earn money from your app. This package supports web (browser), mobile-web, and server (Node.js) clients |
+| prop-types | runtime type checking for React props and similar objects |
+| react-icons | include popular icons in your React projects easily with react-icons, which utilizes ES6 imports that allows you to include only the icons that your project is using |
+| react-loading-skeleton | make beautiful, animated loading skeletons that automatically adapt to your app |
+| react-router-dom | DOM bindings for React Router |
+| react-scroll | React component for animating vertical scrolling |
+| styled-components | it is the result of wondering how we could enhance CSS for styling React component systems. By focusing on a single use case we managed to optimize the experience for developers as well as the output for end users |
+| vanilla-tilt | a smooth 3D tilt javascript library forked from Tilt.js (jQuery version) |
+| web-vitals | measuring all the Web Vitals metrics on real users, in a way that accurately matches how they're measured by Chrome and reported to other Google tools |
 
-- landing page
-- sign in/out system
-- sidebar (with suggestions)
-- system of followers
-- timeline (shares are not working yet!)
+### Version History ✔️
 
-## Upcoming (soon!) changes
+The split into versions allows you to see my progress. See how the application development history went by viewing version history:
 
-Things I'm working on:
+- **v 0.8** (future)
+  - privacy policy content
+  - terms of use content
+- **v 0.7** (future)
+  - profile page
+  - timeline
+    - shares
+    - view all comments
+    - improve design of posts
+  - default user picture
+- **v 0.6** (Sep 28, 2021)
+  - visual changes (redesign)
+    - landing-page
+    - dashboard
+    - header
+    - posts
+    - sidebar
+  - bugs fixed
+  - privacy policy page
+  - terms of use page
+- **v 0.5** (Aug 16, 2021)
+  - protected routes
+- **v 0.4** (Aug 16, 2021)
+  - timeline
+- **v 0.3** (Aug 16, 2021)
+  - sidebar (with suggestions)
+- **v 0.2** (Aug 9, 2021)
+  - sign up error fixed
+  - header for app
+  - dashboard
+- **v 0.1** (Aug 8, 2021)
+  - landing-page
+  - sign in/out system
+  - not-found page
 
-- timeline (shares & view all comments)
-- default user picture (for the user that have not got any custom)
-
-## Upcoming changes (in future)
+### Upcoming updates (in future) 🕑
 
 Things that are on my to-do list:
 
@@ -37,23 +78,68 @@ Things that are on my to-do list:
 - system of points (for completing the challenges)
 - administration panel
 - adding pictures (to tasks which have been completed by user)
-- user profile page
 - badges for specific accounts (influencer, brand, administrator, moderator)
 
-## Team Members
+## Author 🦊
 
 **Dawid Kurowski** | Frontend Developer | [@K0RCH](https://github.com/K0RCH) | Socials: [LinkedIn](https://www.linkedin.com/in/dawid-kurowski/), [Instagram](https://www.instagram.com/d_kurovsky/)
 > I am a student of the Warsaw University of Technology (Faculty of Management, Management Engineering) who would like to develop in creating web and mobile applications. I am a person who is not afraid of new challenges and who enjoys meeting people and working with them on interesting projects. I believe that my curiosity towards the world is my strongest trait and makes me try to constantly set myself and achieve new goals.
 
-## From The Author
+### Contact 🤙
+
+If you want to join the team or ask me a few questions, please write here: thekuroch@gmail.com, or find me on social media!
+
+[<img align="left" alt="linked-in" src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />](https://www.linkedin.com/in/dawid-kurowski/)
+[<img align='left' alt='facebook' src='https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white' />](https://www.facebook.com/TheKuroch)
+[<img align='left' alt='github' src='https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white' />](https://github.com/K0RCH)
+[<img align='left' alt='instagram' src='https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white' />](https://www.instagram.com/d_kurovsky/)
+[<img align='left' alt='behance' src='https://img.shields.io/badge/Behance-0054F7?style=for-the-badge&logo=behance&logoColor=white' />](https://www.behance.net/thekuroch)
+
+<br />
+<br />
+
+### From The Author 🧑‍🎓
 
 **The PointsApp is an educational project.** It aims to acquire technical skills by me. It will not be developed commercially.
 
 Also it is worth to tell that it is my first React project. Everything here is new for me. I decided that it would be a good idea to create my own application which is more or less based on guides found on the Internet. In the project, I also tried to look for information in the documentation if I encountered a problem (I want to learn how to navigate through the documentation).
 
-This project is a huge challenge for me. Every day I learn something new with it.
+This project is a huge challenge for me. Every day I learn something new with it because it gives me a lot of trouble.
 
-## Links that helped me a lot
+## Assets 📚
+
+### Credentials 💳
+
+**Login:** test.user@points-app.com
+**Password:** t3stU$er
+
+### Colors 🖌️
+
+| Hex Value | RGB Value | Description |
+| --------- | --------- | ----------- |
+| #d124ed | rgb(209, 36, 237) | very light purple |
+| #af1ec7 | rgb(175, 30, 199) | light purple |
+| #764AA0 | rgb(118, 74, 169) | purple |
+| #6E36AB | rgb(110, 54, 171) | dark purple |
+| #0A0019 | rgb(10, 0, 25) | very dark purple |
+| #010606 | rgb(10, 0, 25) | black |
+| #bfbfbf | rgb(191, 191, 191) | dark gray |
+| #e6e6e6 | rgb(230, 230, 230) | gray |
+| #ffffff | rgb(255, 255, 255) | white |
+
+### Typography 🖊️
+
+| Font Family | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900 |
+| ----------- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Encode Sans | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |
+
+### Pictures 🖼️
+
+- [Landing Page | Slider](https://www.teahub.io/viewwp/xTwwm_3840-x-1080/)
+
+> Image Licence: Personal Use Only
+
+## Links that helped me a lot 🔗
 
 - [YouTube | Create an Instagram Clone with React, Tailwind CSS, Firebase - Tutorial](https://www.youtube.com/watch?v=mDgEqoQUBgk&ab_channel=freeCodeCamp.org)
 
@@ -86,6 +172,25 @@ This project is a huge challenge for me. Every day I learn something new with it
 
 > How to use .env file, Sign in/out system with Firebase
 
-- [Conditional `ternary` operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)
+- [MDN Web Docs | Conditional `ternary` operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)
 
 > How to use conditional (ternary) operator
+
+- [YouTube | Real Glassmorphism Card Hover Effects | Html CSS Glass morphism Effects](https://www.youtube.com/watch?v=hv0rNxr1XXk&ab_channel=OnlineTutorials)
+
+> About cards (landing page) design idea
+
+- [YouTube | Create a Responsive About Me Page | HTML and CSS](https://www.youtube.com/watch?v=gh-PsrUAcmo&ab_channel=GeekProbin)
+
+> Author section (landing page) design idea
+
+- [GitHub Documentation | Working with advanced formatting](https://docs.github.com/en/github/writing-on-github/working-with-advanced-formatting)
+- [Shields IO](https://shields.io/)
+- [GitHub | othneildrew/Best-README-Template](https://github.com/othneildrew/Best-README-Template)
+- [GitHub | DomPizzie/README-Template.md](https://gist.github.com/DomPizzie/7a5ff55ffa9081f2de27c315f5018afc)
+
+> Readme formatting
+
+## Licence
+
+The project is licensed under the GPLv3 license. You can read more in [this file](https://github.com/K0RCH/PointsApp/blob/master/LICENSE).

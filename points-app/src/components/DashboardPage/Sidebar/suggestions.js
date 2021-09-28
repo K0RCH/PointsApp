@@ -1,12 +1,14 @@
 import { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
-import Skeleton from 'react-loading-skeleton'
+import Skeleton, { SkeletonTheme } from 'react-loading-skeleton'
 import { getSuggestedProfiles } from '../../../services/firebase'
 import SuggestedProfile from './suggested-profile'
 import {
     SuggestionContainer,
+    SuggestionContainerSkeleton,
     SuggestedUsers,
-    SuggestionText
+    SuggestionText,
+    Separator
 } from '../DashboardElements'
 
 const Suggestions = ({ userId, following, loggedInUserDocId }) => {
@@ -21,15 +23,18 @@ const Suggestions = ({ userId, following, loggedInUserDocId }) => {
         if (userId) {
             suggestedProfiles()
         }
-    }, [userId])
+    }, [userId, following])
 
     return !profiles ? (
-        <SuggestionContainer>
-                <Skeleton count={5} height={80} className='mt-5' />
-        </SuggestionContainer>
+        <SuggestionContainerSkeleton>
+                <SkeletonTheme color="rgba(191,191,191, 0.25)" highlightColor="rgba(191,191,191, 0.26)">
+                    <Skeleton count={1} height={500} width={`90%`} className='mt-5' />
+                </SkeletonTheme>
+        </SuggestionContainerSkeleton>
     ) : profiles.length > 0 ? (
         <SuggestionContainer>
             <SuggestionText>Suggestions for you:</SuggestionText>
+            <Separator></Separator>
             <SuggestedUsers>
                 {profiles.map((profile) => (
                     <SuggestedProfile

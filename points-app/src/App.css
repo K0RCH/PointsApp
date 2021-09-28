@@ -15,7 +15,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background: #01bf71;
+  background: #d124ed;
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -25,20 +25,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 body::-webkit-scrollbar-thumb:hover {
-  background: #04ff96;
+  background: #af1ec7;
   transition: all 0.2s ease-in-out;
-}
-
-.loadingPageText {
-  font-size: 40px;
-  font-weight: 600;
-  color: #010606;
-  margin: auto;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .mt-5 {

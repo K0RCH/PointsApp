@@ -31,7 +31,7 @@ const SuggestedProfile = ({
     }
 
     return !followed ? (
-        <SuggestedProfileLink>
+        <SuggestedProfileLink to={`/p/${username}`}>
             <SuggestedProfileContainer title={`Check ${username} profile`}>
                 <SuggestedProfileImgContainer>
                     <SuggestedProfileImg

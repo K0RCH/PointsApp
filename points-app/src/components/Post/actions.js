@@ -57,7 +57,7 @@ const Actions = ({
                                     handleToggleLiked()
                                 }
                             }}
-                            title='Like'
+                            title='Unlike'
                         />
                     ) : (
                         <AiOutlineHeart

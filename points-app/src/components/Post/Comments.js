@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import PropTypes from 'prop-types'
-import { formatDistance } from 'date-fns'
 import AddComment from './AddComment'
 import {
     CommentsContainer,
@@ -8,15 +7,13 @@ import {
     FewCommentsText,
     Icon,
     CommentatorLink,
-    CommentText,
-    DateCreated
+    CommentText
 } from './PostElements'
 import { AiFillCaretDown } from 'react-icons/ai'
 
 const Comments = ({
     docId,
     comments: allComments,
-    posted,
     commentInput
 }) => {
     const [comments, setComments] = useState(allComments)
@@ -24,10 +21,10 @@ const Comments = ({
     return (
         <>
             <CommentsContainer>
-                {comments.length >= 3 && (
-                    <ManyCommentsText>View all {comments.length} comments<Icon><AiFillCaretDown /></Icon></ManyCommentsText>
+                {comments.length >= 2 && (
+                    <ManyCommentsText>View all comments<Icon><AiFillCaretDown /></Icon></ManyCommentsText>
                 )}
-                {comments.slice(0, 3).map((item) => (
+                {comments.slice(0, 2).map((item) => (
                     <FewCommentsText key={`${item.comment}-${item.displayName}`}>
                         <CommentatorLink title={`Check ${item.displayName} profile`} to={`/p/${item.displayName}`}>{item.displayName}</CommentatorLink>
                         <CommentText>{item.comment}</CommentText>
@@ -40,7 +37,6 @@ const Comments = ({
                 setComments={setComments}
                 commentInput={commentInput}
             />
-            <DateCreated>{formatDistance(posted, new Date())} ago</DateCreated>
         </>
     )
 }

@@ -7,13 +7,17 @@ import useAuthListener from './hooks/use-auth-listener'
 
 import ProtectedRoute from './helpers/protected-route'
 import IsUserLoggedIn from './helpers/is-user-logged-in'
+import Loading from './components/LoadingPage/Loading'
 
-const Home = lazy(() => import ('./pages/index'))
+const Landing = lazy(() => import ('./pages/landing'))
 const Signup = lazy(() => import ('./pages/signup'))
 const Login = lazy(() => import ('./pages/login'))
-const Dashboard = lazy(() => import ('./pages/dashboard'))
+const Dashboard = lazy(() => import ('./pages/index'))
 const Profile = lazy(() => import ('./pages/profile'))
+const Challenges = lazy(() => import ('./pages/challenges'))
 const NotFound = lazy(() => import ('./pages/not-found'))
+const PrivacyPolicy = lazy(() => import ('./pages/privacy-policy'))
+const TermsOfUse = lazy(() => import ('./pages/terms-of-use'))
 
 function App() {
   const { user } = useAuthListener()
@@ -21,9 +25,13 @@ function App() {
   return (
     <UserContext.Provider value={{ user }}>
       <Router>
-        <Suspense fallback={ <p className='loadingPageText'>Loading...</p> }>
+        <Suspense fallback={
+          <Loading />
+        }>
           <Switch>
-            <Route path={ ROUTES.HOME } component={ Home } exact />
+            <Route path={ ROUTES.LANDING } component={ Landing } exact />
+            <Route path={ ROUTES.TOS } component={ TermsOfUse } exact />
+            <Route path={ ROUTES.PRIVACY_POLICY } component={ PrivacyPolicy } exact />
             <IsUserLoggedIn user={user} loggedInPath={ROUTES.DASHBOARD} path={ROUTES.LOGIN}>
               <Login />
             </IsUserLoggedIn>
@@ -33,6 +41,9 @@ function App() {
             <Route path={ROUTES.PROFILE} component={Profile} />
             <ProtectedRoute user={user} path={ ROUTES.DASHBOARD } exact>
               <Dashboard />
+            </ProtectedRoute>
+            <ProtectedRoute user={user} path={ ROUTES.CHALLENGES } exact>
+              <Challenges />
             </ProtectedRoute>
             <Route component={ NotFound } />
           </Switch>
