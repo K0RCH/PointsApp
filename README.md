@@ -35,18 +35,20 @@ Points App is the app where you can collect points for completing challenges. It
 
 The split into versions allows you to see my progress. See how the application development history went by viewing version history:
 
-- **v 0.9** (future)
+- **v 0.10** (future)
   - privacy policy content
   - terms of use content
   - checkbox on sign up page
-- **v 0.8** (future)
+- **v 0.9** (future)
   - timeline
     - shares
     - view all comments
     - improve design of posts
-- **v 0.7** (future)
+- **v 0.8** (future)
   - profile page
   - default user picture
+- **v 0.7** (Sep 28, 2021)
+  - documentation  
 - **v 0.6** (Sep 28, 2021)
   - visual changes (redesign)
     - landing-page
@@ -115,6 +117,10 @@ I would like also:
   npm install
   ```
 
+## Documentation
+
+All incomprehensible issues are resolved in the [documentation](https://docs.google.com/document/d/1FLB7BWM0sPQio1746sTa67O-zHgaLACqZpQmtc_N1eQ/edit?usp=sharing).
+
 ## Author 🦊
 
 **Dawid Kurowski** | Frontend Developer | [@K0RCH](https://github.com/K0RCH) | Socials: [LinkedIn](https://www.linkedin.com/in/dawid-kurowski/), [Instagram](https://www.instagram.com/d_kurovsky/)
@@ -145,8 +151,12 @@ This project is a huge challenge for me. Every day I learn something new with it
 
 ### Credentials 💳
 
-**Login:** test.user@points-app.com
-**Password:** t3stU$er
+You can use a test user account:
+
+- **Login:** test.user@points-app.com
+- **Password:** t3stU$er
+
+... also you can create your own account (the best way is to use sign up form) to test the app.
 
 ### Colors 🖌️
 
